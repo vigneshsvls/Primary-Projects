@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background:linear-gradient(90deg, #5936b4 0%, #362a84 100%) ;
+    font-family: "Poppins";
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height:50vh;
+    width:500px;
+    background-color:white;
+    border-radius: 10px;
+}
+.container h{
+    font-size: 30px;
+    font-weight: 500;
+    color:black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+    width:100%;
+    margin-bottom: 15px; /* Adjusting spacing between input groups */
+}
+
+.input-group label{
+    width:20%;
+    text-align: left;
+    color:black;
+    padding: 10px;
+    margin-left: 20px;
+}
+.input-group input,
+.input-group select {
+    width: 70%; 
+    width:auto;
+    padding: 10px;
+    font-size: 15px;
+    margin:0 20px 0 20px;
+}
+
+.container .btn{
+    background:linear-gradient(90deg, #5936b4 0%, #362a84 100%);
+    color:white;
+    padding:10px;
+    margin:20px;
+    text-align: center;
+    font-size: 18px;
+    /*to icrease btn size use width and height*/
+    width:150px;
+    border:none;
+}
+.container .btn:hover{
+    background-color: rgba(0, 255, 255, 0.397);
+}
+
+.res{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom:2px solid black;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .container {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container h {
+        font-size: 20px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-group label,
+    .input-group input,
+    .input-group select {
+        width: 90%;
+        margin: 5px 0;
+        padding: 8px;
+    }
+
+    .container .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
